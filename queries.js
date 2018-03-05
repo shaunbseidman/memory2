@@ -5,7 +5,7 @@ module.exports = {
       return database('coffee')
     },
     read(id){
-      return database('coffeenode').select().where("id", id).first()
+      return database('coffee').select().where("id", id).first()
     },
     create(coffee){
       return database('coffee').insert(coffee).returning('*')
